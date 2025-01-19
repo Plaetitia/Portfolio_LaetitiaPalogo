@@ -28,14 +28,17 @@
         }
 
         .container {
-            max-width: 800px;
+            display: flex;
+            max-width: 1200px;
             margin: 2rem auto;
             padding: 0 1rem;
+            align-items: center;
+            justify-content: space-between;
         }
 
         .bio {
-            text-align: center;
-            margin-bottom: 2rem;
+            text-align: left;
+            flex: 1;
         }
 
         .bio img {
@@ -44,6 +47,11 @@
             height: 150px;
             object-fit: cover;
             margin-bottom: 1rem;
+        }
+
+        .bio h2 {
+            font-size: 2rem;
+            color: #0078d7;
         }
 
         .links ul {
@@ -65,6 +73,14 @@
             text-decoration: underline;
         }
 
+        section h3 {
+            color: #0078d7;
+        }
+
+        section h4 {
+            color: #0078d7;
+        }
+
         footer {
             text-align: center;
             margin-top: 2rem;
@@ -81,43 +97,44 @@
     </header>
 
     <div class="container">
-       
+        <div class="bio">
             <img src="photo1.jpeg" alt="Votre Photo">
             <h2>Laetitia Palogo Compaoré</h2>
-            
+        </div>
 
-        <!-- Projet 1-->
-        <section>
-            <h3>Projet RH Niveau de satisfaction Colaborateurs </h3>
-            <p>Je partage ici un mini-projet réalisé en deux jours. Le but du projet est de proposer un dashboard pour un
-                cabinet de conseil souhaitant aider ses clients à améliorer le bien-être et la performance de leurs
-                employés.</p>
-            <p>Lien vers le dataset : <a href="https://www.kaggle.com/datasets/adityaab1407/employee-productivity-and-satisfaction-hr-data/suggestions?status=pending&yourSuggestions=true" target="_blank">Employee Productivity and Satisfaction HR Data</a></p>
+        <div class="project">
+            <!-- Projet 1-->
+            <section>
+                <h3>Projet RH Niveau de satisfaction Collaborateurs</h3>
+                <p>Je partage ici un mini-projet réalisé en deux jours. Le but du projet est de proposer un dashboard pour un
+                    cabinet de conseil souhaitant aider ses clients à améliorer le bien-être et la performance de leurs
+                    employés.</p>
+                <p>Lien vers le dataset : <a href="https://www.kaggle.com/datasets/adityaab1407/employee-productivity-and-satisfaction-hr-data/suggestions?status=pending&yourSuggestions=true" target="_blank">Employee Productivity and Satisfaction HR Data</a></p>
 
-            <h4>Étapes du projet :</h4>
-            <ol>
-                <li>
-                    <strong>Étape 1 :</strong> Documentation sur les indicateurs clés de la satisfaction et de la productivité
-                    des employés (KPI).
-                    <ul>
-                        <li>Informations générales des employés : salaire moyen, âge moyen, temps moyen d'embauche.</li>
-                        <li>Satisfaction : Note moyenne, catégories (Détracteurs, Passifs, Promoteurs), calcul du ENPS.</li>
-                        <li>Productivité : Productivité moyenne, projets terminés, score moyen de feedback.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Étape 2 :</strong> Analyse exploratoire des données (EDA).
-                    <p>L’EDA permet de détecter les erreurs, identifier les valeurs aberrantes et trouver les relations
-                        intéressantes entre les variables.</p>
-                    <p>Voir le notebook : <a href="https://colab.research.google.com/drive/1LC3XvOHIFiCUZBO2yfR8kXQAcLRuXYug#scrollTo=4RMYv6EqrBl9" target="_blank">EDA Mission Data RH</a></p>
-                </li>
-                <li>
-                    <strong>Étape 3 :</strong> Création du dashboard sur Power BI.
-                    <p><a href="" target="_blank">Cliquez ici pour voir le dashboard.</a></p>
-                </li>
-            </ol>
-        
-        </section>
+                <h4>Étapes du projet :</h4>
+                <ol>
+                    <li>
+                        <strong>Étape 1 :</strong> Documentation sur les indicateurs clés de la satisfaction et de la productivité
+                        des employés (KPI).
+                        <ul>
+                            <li>Informations générales des employés : salaire moyen, âge moyen, temps moyen d'embauche.</li>
+                            <li>Satisfaction : Note moyenne, catégories (Détracteurs, Passifs, Promoteurs), calcul du ENPS.</li>
+                            <li>Productivité : Productivité moyenne, projets terminés, score moyen de feedback.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Étape 2 :</strong> Analyse exploratoire des données (EDA).
+                        <p>L’EDA permet de détecter les erreurs, identifier les valeurs aberrantes et trouver les relations
+                            intéressantes entre les variables.</p>
+                        <p>Voir le notebook : <a href="https://colab.research.google.com/drive/1LC3XvOHIFiCUZBO2yfR8kXQAcLRuXYug#scrollTo=4RMYv6EqrBl9" target="_blank">EDA Mission Data RH</a></p>
+                    </li>
+                    <li>
+                        <strong>Étape 3 :</strong> Création du dashboard sur Power BI.
+                        <p><a href="" target="_blank">Cliquez ici pour voir le dashboard.</a></p>
+                    </li>
+                </ol>
+            </section>
+        </div>
     </div>
 
     <footer>
