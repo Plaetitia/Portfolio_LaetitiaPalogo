@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -44,6 +45,12 @@
             height: 150px;
             object-fit: cover;
             margin-bottom: 1rem;
+            cursor: pointer; /* Change the cursor to indicate it can be clicked */
+            transition: transform 0.3s ease; /* Add a smooth transition effect */
+        }
+
+        .bio img.enlarged {
+            transform: scale(2); /* Enlarge the image */
         }
 
         .bio h2 {
@@ -86,57 +93,18 @@
             color: white;
         }
 
-        /* Ajout de la bande latérale gauche */
-        .sidebar {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 200px;
-            height: 100%;
-            background-color: #0078d7;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding-top: 20px;
-        }
-
-        .sidebar img {
-            border-radius: 50%;
-            width: 120px;
-            height: 120px;
-            object-fit: cover;
-        }
-
-        .sidebar h2 {
-            font-size: 1.5rem;
-            margin-top: 10px;
-        }
-        .preview-image {
-    width: 400px;
-    height: auto;
-    max-width: 100%; /* Pour s'assurer que l'image ne dépasse pas la largeur du conteneur */
-        }
     </style>
-
 </head>
 
 <body>
-    <!-- Bande latérale gauche -->
-    <div class="sidebar">
-        <img src="photo.jpg" alt="Photo de Laetitia">
-        <h2>Laetitia Palogo Compaoré</h2>
-    </div>
 
-    <!-- Contenu principal -->
     <header>
         <h1>Portfolio - Laetitia Palogo Compaoré</h1>
     </header>
 
     <div class="container">
         <section class="bio">
-            <img src="photo.jpg" alt="Laetitia">
+            <img src="photo.jpg" alt="Laetitia" id="profileImage" onclick="enlargeImage()">
             <h2>Laetitia Palogo Compaoré</h2>
         </section>
 
